@@ -4,7 +4,7 @@
 # 2017 10 15 AJL Output to SQL DB
 # 2017 10 16 AJL Output GeoJSON example file using dummy road data
 # 2017 10 17 AJL Trip elapsed time in seconds written to DB
-# 2017 10 18 AJL Interpolated accelarometer data from RPi integrated into GeoJSON file
+# 2017 10 18 AJL Interpolated accelerometer data from RPi integrated into GeoJSON file
 # 2017 10 19 AJL Adjusted for difference in RPi clock (accel data) and cell phone time (GPS data)
 
 import xml.etree.ElementTree as ET
@@ -34,7 +34,7 @@ fOut = open("C:\Users\Andy\OneDrive\code\Python\myCode\RoadQualityProject\Data\m
 fOut.write('eqfeed_callback(')
 my_datum = []
 
-# the MapMyRaide dataset uses a defult namespace that must prepend searches
+# the MapMyRide dataset uses a default namespace that must prepend searches
 defaultnamespace = '{http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2}'
 GPStracking = [[0,0,0,0]] # TimeOfDay, LAT, LON, ElapsedTime
 
